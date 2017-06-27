@@ -21,6 +21,10 @@
         <default>'btc_usd'</default>
         <summary>BTC-E asset pairs</summary>
     </key>
+    <key type="s" name="assetpair-coinbase">
+        <default>'BTC-USD'</default>
+        <summary>Coinbase asset pairs</summary>
+    </key>
  
   </schema>
 </schemalist>

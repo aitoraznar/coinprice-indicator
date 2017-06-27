@@ -12,7 +12,8 @@ DEFAULTS = {
   'refresh': 30,
   'exchange': 'kraken',
   'assetpair-kraken': 'XXBTZUSD',
-  'assetpair-btce': 'btc_usd'
+  'assetpair-btce': 'btc_usd',
+  'assetpair-coinbase': 'BTC-USD'
 }
 
 class Settings():

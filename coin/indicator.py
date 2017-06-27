@@ -16,6 +16,7 @@ from settings import Settings
 
 from exchange.kraken import CONFIG as KrakenConfig
 from exchange.btce import CONFIG as BtcEConfig
+from exchange.coinbase import CONFIG as CoinbaseConfig
 
 ICON_NAME = "gtk-info"
 
@@ -29,12 +30,14 @@ REFRESH_TIMES = [  # seconds
 
 CURRENCY_SHOW = [
   'kraken',
-  'btce'
+  'btce',
+  'coinbase'
 ]
 
 CURRENCIES = {
   'kraken': KrakenConfig['asset_pairs'],
-  'btce': BtcEConfig['asset_pairs']
+  'btce': BtcEConfig['asset_pairs'],
+  'coinbase': CoinbaseConfig['asset_pairs']
 }
 
 class Indicator:

@@ -14,6 +14,7 @@ from indicator import Indicator
 from exchange.kraken import Kraken
 from exchange.bitstamp import Bitstamp
 from exchange.btce import BtcE
+from exchange.coinbase import Coinbase
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
@@ -44,6 +45,11 @@ if __name__ == "__main__":
       'code': 'btce',
       'name': 'BTC-E',
       'instance': BtcE(config, indicator)
+    },
+    {
+      'code': 'coinbase',
+      'name': 'Coinbase',
+      'instance': Coinbase(config, indicator)
     }
   ]
 
